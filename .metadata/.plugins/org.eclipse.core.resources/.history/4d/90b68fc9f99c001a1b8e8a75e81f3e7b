@@ -1,0 +1,17 @@
+.logo{
+	 display: inline;
+	 border: 1px solid grey;
+}
+.logo h2{
+	 color:grey;
+	 text-decoration: none;
+}
+table{
+	border-collapse: collapse;
+}
+tr, td{
+	border: 1px solid black;
+}
+tr td h3{
+	text-align: center;
+}

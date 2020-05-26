@@ -1,0 +1,18 @@
+.logo{
+	 display: inline-block;
+	 float: left;
+	 border: 1px solid grey;
+}
+.logo a{
+	 color:grey;
+	 text-decoration: none;
+}
+table{
+	border-collapse: collapse;
+}
+tr, td{
+	border: 1px solid black;
+}
+tr td h3{
+	text-align: center;
+}

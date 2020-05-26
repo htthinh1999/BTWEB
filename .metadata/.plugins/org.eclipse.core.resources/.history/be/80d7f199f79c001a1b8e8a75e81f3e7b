@@ -1,0 +1,7 @@
+tr, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+tr td h3{
+	text-align: center;
+}
