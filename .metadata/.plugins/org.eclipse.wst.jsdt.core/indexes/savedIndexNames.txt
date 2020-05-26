@@ -1,15 +1,11 @@
 INDEX VERSION 1.4+D:\LAP_TRINH\eclipse-EE\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 3270261601.index
-3087099691.index
 1916576579.index
-3776763338.index
 3313631096.index
+1097907535.index
 1552461506.index
 2995179502.index
 3689519981.index
-2113783309.index
-1541761755.index
-3848390027.index
 753031757.index
-2649449227.index
+1541761755.index
 3052080119.index

@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Tue May 26 20:58:18 ICT 2020
+#Tue May 26 21:21:43 ICT 2020
 org.eclipse.jst.jee.server\:BT6=D\:\\LAP_TRINH\\eclipse-EE\\tomcat9.0\\wtpwebapps\\BT6
 org.eclipse.jst.jee.server\:BT5=D\:\\LAP_TRINH\\eclipse-EE\\tomcat9.0\\wtpwebapps\\BT5
 org.eclipse.jst.jee.server\:BTL=D\:\\LAP_TRINH\\eclipse-EE\\tomcat9.0\\wtpwebapps\\BTL
