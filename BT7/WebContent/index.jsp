@@ -21,13 +21,15 @@
 		</tr>
 		<%@ page language="java" import="java.util.*,java.lang.*" %>
 		<%
-		List<List<String>> sinhVien = (List<List<String>>) request.getAttribute("sinhVien");
-			for(int i=0; i<sinhVien.size(); i++){
-				out.println("<tr>");
-				for(int j=0; j<sinhVien.get(i).size(); j++){
-					out.println("<td>" + sinhVien.get(i).get(j) + "</td>");
+			List<List<String>> sinhVien = (List<List<String>>) request.getAttribute("sinhVien");
+			if(sinhVien!=null){
+				for(int i=0; i<sinhVien.size(); i++){
+					out.println("<tr>");
+					for(int j=0; j<sinhVien.get(i).size(); j++){
+						out.println("<td>" + sinhVien.get(i).get(j) + "</td>");
+					}
+					out.println("</tr>");
 				}
-				out.println("</tr>");
 			}
 		%>
 	</table>
@@ -42,13 +44,15 @@
 		</tr>
 		<%@ page language="java" import="java.util.*,java.lang.*" %>
 		<%
-		List<List<String>> thoiKhoaBieu = (List<List<String>>) request.getAttribute("thoiKhoaBieu");
-			for(int i=0; i<thoiKhoaBieu.size(); i++){
-				out.println("<tr>");
-				for(int j=0; j<thoiKhoaBieu.get(i).size(); j++){
-					out.println("<td>" + thoiKhoaBieu.get(i).get(j) + "</td>");
+			List<List<String>> thoiKhoaBieu = (List<List<String>>) request.getAttribute("thoiKhoaBieu");
+			if(thoiKhoaBieu!=null){
+				for(int i=0; i<thoiKhoaBieu.size(); i++){
+					out.println("<tr>");
+					for(int j=0; j<thoiKhoaBieu.get(i).size(); j++){
+						out.println("<td>" + thoiKhoaBieu.get(i).get(j) + "</td>");
+					}
+					out.println("</tr>");
 				}
-				out.println("</tr>");
 			}
 		%>
 	</table>
@@ -63,13 +67,15 @@
 		</tr>
 		<%@ page language="java" import="java.util.*,java.lang.*" %>
 		<%
-		List<List<String>> ketQua = (List<List<String>>) request.getAttribute("ketQua");
-			for(int i=0; i<ketQua.size(); i++){
-				out.println("<tr>");
-				for(int j=0; j<ketQua.get(i).size(); j++){
-					out.println("<td>" + ketQua.get(i).get(j) + "</td>");
+			List<List<String>> ketQua = (List<List<String>>) request.getAttribute("ketQua");
+			if(ketQua!=null){
+				for(int i=0; i<ketQua.size(); i++){
+					out.println("<tr>");
+					for(int j=0; j<ketQua.get(i).size(); j++){
+						out.println("<td>" + ketQua.get(i).get(j) + "</td>");
+					}
+					out.println("</tr>");
 				}
-				out.println("</tr>");
 			}
 		%>
 	</table>

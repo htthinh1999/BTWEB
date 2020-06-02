@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<libraryInfo home="F:\LAP_TRINH\eclipse-EE" version="1.8.0_251">
+<bootpath>
+<entry path="F:\LAP_TRINH\eclipse-EE\jre\lib\resources.jar"/>
+<entry path="F:\LAP_TRINH\eclipse-EE\jre\lib\rt.jar"/>
+<entry path="F:\LAP_TRINH\eclipse-EE\jre\lib\sunrsasign.jar"/>
+<entry path="F:\LAP_TRINH\eclipse-EE\jre\lib\jsse.jar"/>
+<entry path="F:\LAP_TRINH\eclipse-EE\jre\lib\jce.jar"/>
+<entry path="F:\LAP_TRINH\eclipse-EE\jre\lib\charsets.jar"/>
+<entry path="F:\LAP_TRINH\eclipse-EE\jre\lib\jfr.jar"/>
+<entry path="F:\LAP_TRINH\eclipse-EE\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="F:\LAP_TRINH\eclipse-EE\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="F:\LAP_TRINH\eclipse-EE\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="D:\LAP_TRINH\eclipse-EE" version="1.8.0_251">
 <bootpath>
 <entry path="D:\LAP_TRINH\eclipse-EE\jre\lib\resources.jar"/>

@@ -40,7 +40,7 @@ public class DatabaseManager {
 				if(!sinhVien.contains(thongTinSV)) {
 					sinhVien.add(thongTinSV);
 				}
-				System.out.println(thongTinSV.get(rs.getRow()-1));
+				System.out.println(thongTinSV.get(thongTinSV.size()-1));
 			}
 			con.close();
 		} catch (SQLException e) {
@@ -93,6 +93,30 @@ public class DatabaseManager {
 				}
 				System.out.println(ketQua.get(rs.getRow()-1));
 			}
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void InsertSV(String maSV, String tenSV, String lop) {
+		try {
+			con = DriverManager.getConnection(url, username, password);
+			stm = con.createStatement();
+			sql = "INSERT INTO tblSINHVIEN VALUES('"+maSV+"','"+tenSV+"','"+lop+"')";
+			stm.executeUpdate(sql);
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void UpdateSV(String maSV, String tenSV, String lop) {
+		try {
+			con = DriverManager.getConnection(url, username, password);
+			stm = con.createStatement();
+			sql = "UPDATE tblSINHVIEN SET tensv='"+tenSV+"',lop='"+lop+"' WHERE masv='"+maSV+"'";
+			stm.executeUpdate(sql);
 			con.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
