@@ -122,4 +122,16 @@ public class DatabaseManager {
 			e.printStackTrace();
 		}
 	}
+	
+	public static void DeleteSV(String maSV) {
+		try {
+			con = DriverManager.getConnection(url, username, password);
+			stm = con.createStatement();
+			sql = "DELETE FROM tblSINHVIEN WHERE masv='"+maSV+"'";
+			stm.executeUpdate(sql);
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 }

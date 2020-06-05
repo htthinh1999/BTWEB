@@ -1,0 +1,124 @@
+body{
+	padding-bottom: 50px;
+}
+
+p{
+	padding-right: 10%;
+}
+
+.jumbotron{
+	padding-top: 2%;
+	margin-bottom: 5px;
+	height: 150px;
+	background-color: #D3D3D3;
+}
+
+h1 a{
+	text-decoration: none !important;
+	color: black !important;
+}
+
+.mid{
+	padding-left: 3%;
+}
+
+.character{
+	width: 34px;
+	height: 34px;
+	margin-bottom: 5px;
+}
+
+.list-box{
+	width: 500px;
+}
+
+.translated{
+	margin-top: 50px;
+	margin-left: 3%;
+	width: 1000px;
+	height: 650px;
+	overflow-y: scroll;
+}
+
+td{
+	vertical-align: top;
+	text-align: left;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #D3D3D3;
+  text-align: center;
+  height: 90px;
+}
+
+
+/* Medium devices */
+@media only screen and (max-width: 1400px) and (min-width: 1000px){
+	h1{
+		font-size: 40px;
+	}
+	h2{
+		font-size: 35px;
+	}
+	h6{
+		font-size: 20px;
+	}
+	p{
+		font-size: 20px;
+	}
+	form{
+		font-size: 20px;
+	}
+	label{
+		font-size: 20px;
+	}
+	body{
+		padding-bottom: 110px;
+	}
+	.jumbotron{
+		padding-top: 3.5%;
+		height: 150px;
+	}
+	.footer{
+		font-size: 20px;
+		height: 110px;
+	}
+}
+
+/* Small devices */
+@media only screen and (max-width: 700px){
+	h1{
+		font-size: 18px;
+	}
+	h2{
+		font-size: 16px;
+	}
+	h6{
+		font-size: 12px;
+	}
+	p{
+		font-size: 10px;
+	}
+	form{
+		font-size: 10px;
+	}
+	label{
+		font-size: 12px;
+	}
+	body{
+		padding-bottom: 75px;
+	}
+	.jumbotron{
+		padding-top: 4%;
+		height: 75px;
+	}
+	.footer{
+		font-size: 10px;
+		height: 80px;
+	}
+}
