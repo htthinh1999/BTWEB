@@ -40,8 +40,8 @@ public class Home extends HttpServlet {
 			databaseManager.GetData();
 			loaded = true;
 		}
+		request.setAttribute("wordsFirstCharacter", DatabaseManager.wordsFirstCharacter);
 		request.setAttribute("words", DatabaseManager.words);
-		
 		System.out.println("Load Sucessfully!!");
 		RequestDispatcher rd = request.getRequestDispatcher(url);
 		rd.forward(request, response);

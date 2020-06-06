@@ -45,6 +45,11 @@ td{
 	text-align: left;
 }
 
+.audio{
+	width: 25px;
+	height: 25px;
+}
+
 .footer {
   position: fixed;
   right: 0;

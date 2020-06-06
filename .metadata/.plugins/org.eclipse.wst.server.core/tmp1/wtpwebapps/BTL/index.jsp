@@ -13,6 +13,7 @@
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	
 	<script>
 		$(function () {
 			// Override autocomplete filter to search only from the beginning of the string 
@@ -52,9 +53,7 @@
 <body>
 	<div>
 		<div class="jumbotron">
-		<h1>
-			<a href="/BTL/home">TỪ ĐIỂN ANH - VIỆT</a>
-		</h1>
+			<h1>TỪ ĐIỂN ANH - VIỆT</h1>
 			<h6>Tra cứu từ điển Anh - Việt trực tuyến miễn phí</h6>
 		</div>
 		
@@ -82,13 +81,11 @@
 		</div>
 	</div>
 	<br>
-		
 	<p style="display: block; margin-left: 10%;">
 		<%@page import="java.util.*"%>
 		<%
  			if(request.getAttribute("word")!=null){
  				String word = request.getAttribute("word").toString();
- 				
   				@SuppressWarnings("unchecked")
   				Hashtable<String, String> dictionary = (Hashtable<String, String>) request.getAttribute("dictionary");
   				if(dictionary.containsKey(word)){
