@@ -79,7 +79,7 @@
 								</tr>
 								<tr>
 									<th class="ui-widget">
-										<input type="search" id="txtInput" name="txtInput" value="<% 
+										<input type="search" class="input" id="txtInput" name="txtInput" value="<% 
 												String txtInputed = (String) request.getAttribute("word");
 												if(txtInputed!=null){
 													out.println(txtInputed);
@@ -109,7 +109,7 @@
 										out.println("Không thể dịch từ bạn đã nhập!");
 									}
 								}else{
-									out.println("Từ bạn đã nhập sẽ được dịch tại đây!");
+									out.println("Từ bạn nhập sẽ được dịch tại đây!");
 								}
 							%>
 						</p>
@@ -127,14 +127,10 @@
 							<%
 								for(char i='A'; i<='Z'; i++){
 									out.println("<button id='" + i + "' class='character' onClick=\"getWord('" + i + "')\">" + i + "</button>");
-									if(i=='M'){
-										out.println("<br>");
-									}
 								}
 							%>
 						</div>
 						<!-- Array Character -->
-						
 						
 						<!-- ListBox -->
 						<div>
