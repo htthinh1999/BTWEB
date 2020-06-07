@@ -3,7 +3,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+	
+	<%@page import="java.util.*"%>
+	<%
+		if(request.getAttribute("words")==null){%>
+			<jsp:forward page='/home' />
+		<%}
+	%>
+
+	<meta charset="UTF-8">
 	<title>TỪ ĐIỂN ANH - VIỆT</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -14,7 +22,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/js/materialize.min.js"></script>
-	
 	<script src="<%=request.getContextPath()%>/javascript/main.js"></script>
 	
 	<script>
@@ -57,13 +64,12 @@
 	<!-- Header -->
 	<div class="jumbotron">
 		<h1>
-			<a href="/BTL-Main/home">TỪ ĐIỂN ANH - VIỆT</a>
+			<a href="/BTL-Main/index.jsp">TỪ ĐIỂN ANH - VIỆT</a>
 		</h1>
 		<h6>Tra cứu từ điển Anh - Việt trực tuyến miễn phí</h6>
 	</div>
 	<!-- Header -->
 	
-	<%@page import="java.util.*"%>
 	<!-- Body -->
 	<div class="mid">
 		<table width="100%">
