@@ -8,22 +8,22 @@ public class DatabaseManager {
 	public static Hashtable<Character, ArrayList<String>> wordsFirstCharacter = new Hashtable<Character, ArrayList<String>>();
 	public static List<String> words = new ArrayList<String>();
 	
-	Connection con;
-	Statement stm;
-	ResultSet rs;
+	static Connection con;
+	static Statement stm;
+	static ResultSet rs;
 
-	String url = "jdbc:mysql://localhost:3306/edict";
-	String username = "root";
-	String password = "a123";
+	static String url = "jdbc:mysql://localhost:3306/edict";
+	static String username = "root";
+	static String password = "a123";
 	
-	public void Init26Char() {
+	public static void Init26Char() {
 		for(char i='A'; i<='Z'; i++) {
 			ArrayList<String> listWordOfChar = new ArrayList<String>();
 			wordsFirstCharacter.put(i, listWordOfChar);
 		}
 	}
 	
-	public void GetData() {
+	public static void GetData() {
 		
 		Init26Char();
 		
@@ -47,6 +47,40 @@ public class DatabaseManager {
 				words.add("\"" + word + "\"");
 				dictionary.put(word, detail);
 			}
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static int WordCount() {
+		int index = 0;
+		try {
+			con = DriverManager.getConnection(url, username, password);
+			stm = con.createStatement();
+			String sql = "select count(*) from tbl_edict";
+			rs = stm.executeQuery(sql);
+			rs.next();
+			index = Integer.valueOf(rs.getString(1));
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return index;
+	}
+	
+	public static void AddNewWord(String newWord, String newWordTranslated) {
+		try {
+			con = DriverManager.getConnection(url, username, password);
+			stm = con.createStatement();
+			String sql = "select count(*) from tbl_edict";
+			rs = stm.executeQuery(sql);
+			rs.next();
+			int index = Integer.valueOf(rs.getString(1)) + 2;
+			
+			sql = "INSERT INTO `tbl_edict` (`idx`, `word`, `detail`) VALUES" + 
+					"(" + index+ ", '" + newWord + "', '<C><F><I><N><Q>@" + newWord + "<br />- " + newWordTranslated + "</Q></N></I></F></C>')";
+			stm.executeUpdate(sql);
 			con.close();
 		} catch (SQLException e) {
 			e.printStackTrace();

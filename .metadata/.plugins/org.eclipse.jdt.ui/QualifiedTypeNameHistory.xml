@@ -12,5 +12,6 @@
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="thoikhoabieu.model.DatabaseManager"/>
 <fullyQualifiedTypeName name="evdictionary.controller.DictionaryLookUp"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="evdictionary.model.DatabaseManager"/>
 </qualifiedTypeNameHistroy>

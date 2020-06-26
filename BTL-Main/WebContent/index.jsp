@@ -111,9 +111,19 @@
 										out.println("<b>" + word + " </b>");
 										out.println("<a href='#' id='speak' class='btn'><img class='audio' src='"+ request.getContextPath() +"/images/audio-icon.png'></a><br>");
 										out.print(wordTranslated);
-									}else{
-										out.println("Không thể dịch từ bạn đã nhập!");
-									}
+									}else{ %>
+										<b>Không thể dịch từ bạn đã nhập!</b><br>
+										Nếu đây là từ có nghĩa, bạn có thể thêm nghĩa vào mẫu bên dưới!
+										<form action="add-new-word">
+											<label for="txtNewWord"><b>Từ mới</b></label><br>
+											<input type="text" class="input" id="txtNewWord" name="txtNewWord"><br>
+											<label for="txtNewWordType"><b>Loại từ (Danh từ, tính từ,..., viết tắt)</b></label><br>
+											<input type="text" class="input" id="txtNewWordType" name="txtNewWordType"><br>
+											<label for="txtNewWordTranslated"><b>Nghĩa của từ</b></label><br>
+											<textarea class="new-word-translated" id="txtNewWordTranslated" name="txtNewWordTranslated"></textarea><br>
+											<button type="submit" id="btnAddWord" class="ui-state-default ui-corner-all"><b>Thêm từ mới</b></button>
+										</form>
+									<%}
 								}else{
 									out.println("Từ bạn nhập sẽ được dịch tại đây!");
 								}

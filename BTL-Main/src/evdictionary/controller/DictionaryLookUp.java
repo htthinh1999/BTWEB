@@ -17,7 +17,7 @@ import evdictionary.model.DatabaseManager;
 @WebServlet("/dictionary-look-up")
 public class DictionaryLookUp extends HttpServlet {
 
-    static final String url = "/home";
+    static final String url = "index.jsp";
 	private static final long serialVersionUID = 1L;
        
     /**

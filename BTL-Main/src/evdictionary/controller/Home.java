@@ -16,13 +16,9 @@ import evdictionary.model.DatabaseManager;
  */
 @WebServlet("/home")
 public class Home extends HttpServlet {
-
-    public static boolean loaded = false;
     
     static final String url = "index.jsp";
 	static final long serialVersionUID = 1L;
-	
-	DatabaseManager databaseManager;
 	
     /**
      * @see HttpServlet#HttpServlet()
@@ -35,10 +31,8 @@ public class Home extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		if(!loaded) {
-			databaseManager = new DatabaseManager();
-			databaseManager.GetData();
-			loaded = true;
+		if(DatabaseManager.words.size() < DatabaseManager.WordCount()) {
+			DatabaseManager.GetData();
 		}
 		request.setAttribute("wordsFirstCharacter", DatabaseManager.wordsFirstCharacter);
 		request.setAttribute("words", DatabaseManager.words);

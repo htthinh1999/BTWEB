@@ -5,6 +5,8 @@ F:\LAP_TRINH\eclipse-EE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\js
 \BT7\src
 F:\LAP_TRINH\eclipse-EE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2349592485.index
 \BT2\src
+F:\LAP_TRINH\eclipse-EE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\633422742.index
+\ChuoiThuong\src
 D:\LAP_TRINH\eclipse-EE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\86778755.index
 \MVC\src
 D:\LAP_TRINH\eclipse-EE\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2400048346.index
